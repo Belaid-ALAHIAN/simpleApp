@@ -1,0 +1,298 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(252, 252, 252);
+    font-size: 100%;
+}
+
+.section-up{
+    background-image: url(magasin.jpg) ;
+    background-size: cover;
+    height: 220px;
+    
+    
+    
+}
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    
+    border-bottom: 2px solid #fCAF50;
+  }
+
+
+.avalaible-month ,.total{
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.box{
+    margin-top: 10px;
+}
+.income{
+    background-color: rgba(0, 10, 98, 0.788);
+    height:30px;
+    padding-top: 5px;
+    
+    
+    
+}
+.in-text{
+    float: left;
+    margin-left: 50px;
+
+}
+.in-value{
+    float: right;
+    margin-right: 50px;
+}
+
+.expens{
+    background-color: rgb(243, 74, 97,0.788);
+    margin-top:10px;
+    height: 30px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 30%;
+    width: 200px;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+   
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+.list-btn ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 50%;
+    
+}
+/*-----BUTTONS----*/
+.btn{
+    text-align: center;
+}
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 5px 10px;
+    
+    font-size:55%;
+    background-color: rgba(73, 65, 65, 0.89);
+	text-decoration: none;
+    border-radius: 200px;
+    width: 80px;
+	transition: background-color 0.3s , border 0.3s,color 0.8s;
+	
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+	border: 1px solid #e67e22;
+	color: #fcfcfc;
+}
+.btn:hover,
+.btn:active{
+	background-color: #cf6d17;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+	border: 1px solid #e67e22;
+	color: #fff;
+}
+
+
+/*.add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+}
+.add__container select{
+    height:100px;
+    width: 100px;
+    font-size: 90%;
+    margin-left: 10px;
+   
+    padding-top: 10px;
+    border-radius: 15px;
+
+}*/
+
+
+
+
+/***** FORM *****/
+.add {
+    padding: 4px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.add__type {
+    width: 20px;
+    border: 1px solid #e7e7e7;
+    height: 29px;
+    
+    color: gba(32, 32, 32, 0.788);
+    background-color: #fff;
+    margin-left: 5px;
+    font-weight: 130;
+    transition: border 0.3s;
+    
+    
+}
+.add__btn {
+    
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+.add__btn img{
+    width: 30px;
+
+border-radius: 50px;
+}
+.add__description,
+.add__value {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: rgba(32, 32, 32, 0.788);
+    font-family: inherit;
+    font-size: 60%;
+    padding: 12px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.add__description { width:  150px; height:30px ;}
+.add__value { width:  70px; height: 30px;}
+
+.icome__title { 
+    color: rgba(30, 182, 98, 0.788); 
+    text-align: center;
+}
+.expenses__title { 
+    color: rgb(243, 74, 97,0.788);
+    text-align: center;
+ }
+
+ .list ul li{
+     list-style: none;
+     display: inline;
+     
+ }
+ .list{
+     margin-bottom: 10px;
+     text-align: center;
+ }
+
+
+ /******/
+.section-down{
+    
+        color: #f67082;
+    
+}
+ .item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child { border-top: 1px solid #e7e7e7; }
+.item:nth-child(even) { background-color: #f7f7f7; }
+
+.item__description {
+    float: left;
+}
+
+.item__value {
+    float: left;
+    transition: transform 0.3s;
+}
+
+.item__percentage {
+    float: left;
+    margin-left: 20px;
+    transition: transform 0.3s;
+    font-size: 11px;
+    background-color: #FFDAD9;
+    padding: 3px;
+    border-radius: 3px;
+    width: 32px;
+    text-align: center;
+}
+
+.income .item__value,
+.income .item__delete--btn {
+    color: #28B9B5;
+}
+
+.expenses .item__value,
+.expenses .item__percentage,
+.expenses .item__delete--btn {
+    color: #FF5049;
+}
+
+
+.item__delete {
+    float: left;
+}
+
+.item__delete--btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.item__delete--btn:focus { outline: none; }
+.item__delete--btn:active { transform: translateY(2px); }
+
+.item:hover .item__delete--btn { display: block; }
+.item:hover .item__value { transform: translateX(-20px); }
+.item:hover .item__percentage { transform: translateX(-20px); }
+
+
+.unpaid {
+    background-color: #FFDAD9 !important;
+    cursor: pointer;
+    color: #FF5049;
+
+}
+
+.unpaid .item__percentage { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
+.unpaid:hover .item__description { font-weight: 900; }
+
