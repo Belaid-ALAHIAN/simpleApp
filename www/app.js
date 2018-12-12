@@ -49,12 +49,6 @@ var DTcontroler = (function(){
            
         }
     }
-
-
-
-
-
-
 })();
 
 
