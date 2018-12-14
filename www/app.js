@@ -79,7 +79,24 @@ var UIcontroller = (function(){
             value : document.querySelector(domString.inputValue).value,
             
 
+            },
+        addIU :function(obj,type){
+            var html,newHtml,element;
+            if(type==='inc'){
+                element=domString.incomsItem;
+            html=' <div class="item clearfix" id="%id%"><div class="item__description">%des%</div><div class="right clearfix"><div class="item__value">%val%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+            }else if(type==='exp'){
+                element=domString.expensItem;
+            html='<div class="item clearfix" id="%id%"><div class="item__description">%des%</div><div class="right clearfix"><div class="item__value">%val%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+            
             }
+            newHtml=html.replace('%id%',obj.id);
+            newHtml=newHtml.replace('%des%',obj.description);
+            newHtml=newHtml.replace('%val%',obj.value);
+
+            document.querySelector(element).insertAdjacentHTML("beforeend",newHtml);
+
+        },
             
         }
 
@@ -106,7 +123,7 @@ var controller = (function(DTCtrl,UICtrl){
         
         
         //3.add the item to the UI
-
+        UICtrl.addIU();
         //4.calculate the budget
         
         //5.display the budget on the UI
