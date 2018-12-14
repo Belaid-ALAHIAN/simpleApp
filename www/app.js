@@ -58,7 +58,9 @@ var UIcontroller = (function(){
         inputType:'.add__type',
         inputDescription:'.add__description',
         inputValue:'.add__value',
-        btn:'.add__btn'
+        btn:'.add__btn',
+        expensItem:'.expenses__list',
+        incomsItem:'.income__list',
 
 
     };
@@ -123,7 +125,7 @@ var controller = (function(DTCtrl,UICtrl){
         
         
         //3.add the item to the UI
-        UICtrl.addIU();
+        UICtrl.addIU(item,input.type);
         //4.calculate the budget
         
         //5.display the budget on the UI
