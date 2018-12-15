@@ -102,8 +102,10 @@ var UIcontroller = (function(){
             //clear fields
        cleanInputs :function(){
           var inputs = document.querySelectorAll(domString.inputDescription+','+domString.inputValue);
-          var fields = Array.prototype.slice.call(inputs);
-          var newFields =fields.slice(0);
+           var arrayInputs=Array.prototype.slice.call(inputs);
+           arrayInputs.forEach(function(current,index,array) {
+              current.value=""; 
+           });
             
         }
 
@@ -127,7 +129,7 @@ var controller = (function(DTCtrl,UICtrl){
         var input=UICtrl.getInput();
         //2.add the item to the controller
         var item=DTCtrl.addItem(input.type,input.description,input.value);
-        
+        UICtrl.cleanInputs();
         
         //3.add the item to the UI
         UICtrl.addIU(item,input.type);
