@@ -99,6 +99,11 @@ var UIcontroller = (function(){
             document.querySelector(element).insertAdjacentHTML("beforeend",newHtml);
 
         },
+            //clear fields
+       cleanInputs :function(){
+          var inputs = document.querySelectorAll(domString.inputDescription+','+domString.inputValue);
+          var fields = Array.prototype.slice.call(inputs);
+          var newFields =fields.slice(0);
             
         }
 
