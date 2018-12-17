@@ -105,8 +105,9 @@ var UIcontroller = (function(){
            var arrayInputs=Array.prototype.slice.call(inputs);
            arrayInputs.forEach(function(current,index,array) {
               current.value=""; 
+           
            });
-            
+           arrayInputs[0].focus();
         }
 
     };
