@@ -78,7 +78,7 @@ var UIcontroller = (function(){
             return{
             type : document.querySelector(domString.inputType).value,
             description : document.querySelector(domString.inputDescription).value,
-            value : document.querySelector(domString.inputValue).value,
+            value :parseFloat( document.querySelector(domString.inputValue).value),
             
 
             },
