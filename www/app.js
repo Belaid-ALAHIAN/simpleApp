@@ -23,7 +23,6 @@ var DTcontroler = (function(){
         totals:{
             exp:0,
             inc:0
-        }
         },
         percentage:0,
         budg:0
