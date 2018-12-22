@@ -56,6 +56,20 @@ html{
     margin-right: 50px;
 }
 
+.budget__expenses--percentage{
+    float:right;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    width: 30px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-right: 10px;
+}
+.expens-value{
+    float: left;
+    margin-right: 10px;
+}
 .expens{
     background-color: rgb(243, 74, 97,0.788);
     margin-top:10px;
