@@ -55,7 +55,6 @@ html{
     float: right;
     margin-right: 50px;
 }
-
 .budget__expenses--percentage{
     float:right;
     background-color: rgba(255, 255, 255, 0.2);
@@ -65,6 +64,7 @@ html{
     font-size: 11px;
     padding: 3px 0;
     margin-right: 10px;
+    
 }
 .expens-value{
     float: left;
@@ -101,30 +101,30 @@ html{
 }
 .btn:link,
 .btn:visited {
-	display: inline-block;
-	padding: 5px 10px;
+    display: inline-block;
+    padding: 5px 10px;
     
     font-size:55%;
     background-color: rgba(73, 65, 65, 0.89);
-	text-decoration: none;
+    text-decoration: none;
     border-radius: 200px;
     width: 80px;
-	transition: background-color 0.3s , border 0.3s,color 0.8s;
-	
+    transition: background-color 0.3s , border 0.3s,color 0.8s;
+    
 }
 .btn-ghost:link,
 .btn-ghost:visited{
-	border: 1px solid #e67e22;
-	color: #fcfcfc;
+    border: 1px solid #e67e22;
+    color: #fcfcfc;
 }
 .btn:hover,
 .btn:active{
-	background-color: #cf6d17;
+    background-color: #cf6d17;
 }
 .btn-ghost:hover,
 .btn-ghost:active{
-	border: 1px solid #e67e22;
-	color: #fff;
+    border: 1px solid #e67e22;
+    color: #fff;
 }
 
 
@@ -236,9 +236,17 @@ border-radius: 50px;
         color: #f67082;
     
 }
+.right{
+    text-align: center;
+    float: right;
+}
  .item {
-    padding: 13px;
+    
     border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .item:first-child { border-top: 1px solid #e7e7e7; }
@@ -250,12 +258,13 @@ border-radius: 50px;
 
 .item__value {
     float: left;
+    margin-left: 5px;
     transition: transform 0.3s;
 }
 
 .item__percentage {
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     transition: transform 0.3s;
     font-size: 11px;
     background-color: #FFDAD9;
@@ -291,13 +300,16 @@ border-radius: 50px;
     line-height: 1;
     display: none;
 }
+.item__delete--btn img{
+    height: 18px;
+}
 
 .item__delete--btn:focus { outline: none; }
 .item__delete--btn:active { transform: translateY(2px); }
 
 .item:hover .item__delete--btn { display: block; }
-.item:hover .item__value { transform: translateX(-20px); }
-.item:hover .item__percentage { transform: translateX(-20px); }
+.item:hover .item__value { transform: translateX(-15px); }
+.item:hover .item__percentage { transform: translateX(-15px); }
 
 
 .unpaid {
