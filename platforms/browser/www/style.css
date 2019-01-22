@@ -15,7 +15,7 @@ html{
 .section-up{
     background-image: url(magasin.jpg) ;
     background-size: cover;
-    height: 220px;
+    height:188px;
     
     
     
@@ -39,7 +39,7 @@ html{
     margin-top: 10px;
 }
 .income{
-    background-color: rgba(0, 10, 98, 0.788);
+    background-color: rgba(30, 182, 98, 0.788);
     height:30px;
     padding-top: 5px;
     
@@ -55,7 +55,21 @@ html{
     float: right;
     margin-right: 50px;
 }
-
+.budget__expenses--percentage{
+    float:right;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    width: 30px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-right: 10px;
+    
+}
+.expens-value{
+    float: left;
+    margin-right: 10px;
+}
 .expens{
     background-color: rgb(243, 74, 97,0.788);
     margin-top:10px;
@@ -63,78 +77,6 @@ html{
     padding-top: 5px;
     margin-bottom: 10px;
 }
-/* Style the sidebar - fixed full height */
-.sidebar {
-    height: 30%;
-    width: 200px;
-    position: fixed;
-    
-    top: 0;
-    left: 0;
-   
-    overflow-x: hidden;
-    padding-top: 16px;
-  }
-.list-btn ul li{
-    list-style: none;
-    display: inline-block;
-    padding-left: 50%;
-    
-}
-/*-----BUTTONS----*/
-.btn{
-    text-align: center;
-}
-.btn:link,
-.btn:visited {
-	display: inline-block;
-	padding: 5px 10px;
-    
-    font-size:55%;
-    background-color: rgba(73, 65, 65, 0.89);
-	text-decoration: none;
-    border-radius: 200px;
-    width: 80px;
-	transition: background-color 0.3s , border 0.3s,color 0.8s;
-	
-}
-.btn-ghost:link,
-.btn-ghost:visited{
-	border: 1px solid #e67e22;
-	color: #fcfcfc;
-}
-.btn:hover,
-.btn:active{
-	background-color: #cf6d17;
-}
-.btn-ghost:hover,
-.btn-ghost:active{
-	border: 1px solid #e67e22;
-	color: #fff;
-}
-
-
-/*.add {
-    padding: 14px;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: #f7f7f7;
-}
-.add__container {
-    margin: 0 auto;
-    text-align: center;
-}
-.add__container select{
-    height:100px;
-    width: 100px;
-    font-size: 90%;
-    margin-left: 10px;
-   
-    padding-top: 10px;
-    border-radius: 15px;
-
-}*/
-
-
 
 
 /***** FORM *****/
@@ -163,7 +105,7 @@ html{
     
     
 }
-.add__btn {
+.add__btn ,.add__btnn{
     
     background: none;
     border: none;
@@ -179,6 +121,10 @@ html{
     width: 30px;
 
 border-radius: 50px;
+}
+.btnInc{
+   
+    display: none;
 }
 .add__description,
 .add__value {
@@ -219,12 +165,20 @@ border-radius: 50px;
  /******/
 .section-down{
     
-        color: #f67082;
+        color:  #f72541;
     
 }
+.right{
+    text-align: center;
+    float: right;
+}
  .item {
-    padding: 13px;
+    
     border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .item:first-child { border-top: 1px solid #e7e7e7; }
@@ -236,12 +190,13 @@ border-radius: 50px;
 
 .item__value {
     float: left;
+    margin-left: 5px;
     transition: transform 0.3s;
 }
 
 .item__percentage {
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     transition: transform 0.3s;
     font-size: 11px;
     background-color: #FFDAD9;
@@ -255,11 +210,14 @@ border-radius: 50px;
 .income .item__delete--btn {
     color: #28B9B5;
 }
+.itemInc{
+    color: rgba(30, 182, 98, 0.788); 
+}
 
 .expenses .item__value,
 .expenses .item__percentage,
 .expenses .item__delete--btn {
-    color: #FF5049;
+    color: rgb(238, 118, 113);
 }
 
 
@@ -277,22 +235,13 @@ border-radius: 50px;
     line-height: 1;
     display: none;
 }
+.item__delete--btn img{
+    height: 18px;
+}
 
 .item__delete--btn:focus { outline: none; }
 .item__delete--btn:active { transform: translateY(2px); }
 
 .item:hover .item__delete--btn { display: block; }
-.item:hover .item__value { transform: translateX(-20px); }
-.item:hover .item__percentage { transform: translateX(-20px); }
-
-
-.unpaid {
-    background-color: #FFDAD9 !important;
-    cursor: pointer;
-    color: #FF5049;
-
-}
-
-.unpaid .item__percentage { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
-.unpaid:hover .item__description { font-weight: 900; }
-
+.item:hover .item__value { transform: translateX(-15px); }
+.item:hover .item__percentage { transform: translateX(-15px); }
